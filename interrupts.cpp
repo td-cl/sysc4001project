@@ -30,6 +30,36 @@ int main(int argc, char **argv)
 
     /******************ADD YOUR SIMULATION CODE HERE*************************/
 
+    /*
+    Breakdown of activities:
+    CPU: Simulate CPU activity for the specified duration. This will involve calling sleep()
+    or sleep_for using crono and thread libraries.
+
+    SYSCALL: Handle a system call. Steps that need to be taken:
+      1. Switch to kernel mode
+      2. Save the current state of the CPU
+      3. Lookup interrupt vector table to find the address of the ISR for system calls
+      4. Jump to the ISR address and execute the ISR code
+      5. IRET (interrupt return)
+
+    */
+    if (activity == "CPU")
+    {
+      std::cout << "Handling CPU activity\n";
+    }
+    else if (activity == "SYS_CALL")
+    {
+      std::cout << "Handling system call\n";
+    }
+    else if (activity == "END_IO")
+    {
+      std::cout << "Handling end of I/O\n";
+    }
+    else
+    {
+      std::cout << "Unknown activity\n";
+    }
+
     /************************************************************************/
   }
 

@@ -60,10 +60,10 @@ int main(int argc, char **argv)
     else if (activity == "SYSCALL")
     {
       auto [execution, time] = intr_boilerplate(timer, duration_intr, randomNumberContext, vectors);
-      std::cout << execution;                                                    // gives obtained ISR address
-      timer = time;                                                              // updating running timer with new time after interupts
-      std::cout << timer << ", " << randomNumberISR << ", call device driver\n"; // includes device delay from table
-      int device_time = delays[duration_intr - 1];                               // taking in device delay from table
+      std::cout << execution;                                                                                                          // gives obtained ISR address
+      timer = time;                                                                                                                    // updating running timer with new time after interupts
+      int device_time = delays[duration_intr - 1];                                                                                     // taking in device delay from table
+      std::cout << timer << ", " << randomNumberISR << ", call device driver (includes delay of " << device_time << " from device)\n"; // includes device delay from table
       timer += device_time;
       std::cout << timer << ", " << 1 << ", IRET\n";
       timer += 1;

@@ -6,6 +6,7 @@
  */
 
 #include <interrupts.hpp>
+#include <random>
 
 int main(int argc, char **argv)
 {
@@ -20,12 +21,20 @@ int main(int argc, char **argv)
   std::string execution; //!< string to accumulate the execution output
 
   /******************ADD YOUR VARIABLES HERE*************************/
+  int timer = 0;
 
   /******************************************************************/
 
   // parse each line of the input trace file
   while (std::getline(input_file, trace))
   {
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_int_distribution<> distr1(1, 10);
+    std::uniform_int_distribution<> distr2(1, 40);
+
+    int randomNumberContext = distr1(gen);
+    int randomNumberISR = distr2(gen);
     auto [activity, duration_intr] = parse_trace(trace);
 
     /******************ADD YOUR SIMULATION CODE HERE*************************/
@@ -45,15 +54,25 @@ int main(int argc, char **argv)
     */
     if (activity == "CPU")
     {
-      std::cout << "Handling CPU activity\n";
+      std::cout << timer << ", " << duration_intr << ", handling CPU activity \n";
+      timer += duration_intr;
     }
-    else if (activity == "SYS_CALL")
+    else if (activity == "SYSCALL")
     {
-      std::cout << "Handling system call\n";
+      auto [execution, time] = intr_boilerplate(timer, duration_intr, randomNumberContext, vectors);
+      std::cout << execution;                                                    // gives obtained ISR address
+      timer = time;                                                              // updating running timer with new time after interupts
+      std::cout << timer << ", " << randomNumberISR << ", call device driver\n"; // includes device delay from table
+      int device_time = delays[duration_intr - 1];                               // taking in device delay from table
+      timer += device_time;
+      std::cout << timer << ", " << 1 << ", IRET\n";
+      timer += 1;
     }
     else if (activity == "END_IO")
     {
-      std::cout << "Handling end of I/O\n";
+      int device_time = delays[duration_intr - 1];
+      std::cout << timer << ", " << device_time << ", End of I/O " << duration_intr << ": interrupt\n";
+      timer += device_time;
     }
     else
     {

@@ -1,0 +1,110 @@
+0, 32, handling CPU activity 
+
+32, 1, switch to kernel mode
+
+33, 10, context saved
+
+43, 1, find vector 0 in memory position 0x0000 into the PCaddress 0X01E3
+
+45, 22, call device driver (includes delay of 0 from device)
+
+45, 1, IRET
+
+46, 0, End of I/O 0: interrupt
+
+46, 132, handling CPU activity
+
+178, 1, switch to kernel mode
+
+179, 10, context saved
+
+189, 1, find vector 1 in memory position 0x0002 into the PC address 0X029C
+
+191, 35, call device driver (includes delay of 110 from device)
+
+301, 1, IRET
+
+302, 110, End of I/O 1: interrupt
+
+412, 20, handling CPU activity
+
+
+
+Error: Malformed input line:
+
+Unknown activity
+
+
+
+432, 64, handling CPU activity
+
+496, 1, switch to kernel mode
+
+497, 10, context saved
+
+507, 1, find vector 22 in memory position 0x002C into the PC address 0X03B7
+
+509, 34, call device driver (includes delay of 0 from device)
+
+509, 1, IRET
+
+510, 0, End of I/O 22: interrupt
+
+510, 164, handling CPU activity
+
+674, 1, switch to kernel mode
+
+675, 10, context saved
+
+685, 1, find vector 2 in memory position 0x0004 into the PC address 0X0695
+
+687, 25, call device driver (includes delay of 100 from device)
+
+787, 1, IRET
+
+788, 100, End of I/O 2: interrupt
+
+888, 22, handling CPU activity
+
+
+
+Error: Malformed input line:
+
+Unknown activity
+
+
+
+910, 350, handling CPU activity
+
+1260, 1, switch to kernel mode
+
+1261, 10, context saved
+
+1271, 1, find vector 20 in memory position 0x0028 into the PCd address 0X07B7
+
+1273, 37, call device driver (includes delay of 652 from device)
+
+1925, 1, IRET
+
+1926, 652, End of I/O 20: interrupt
+
+2578, 349, handling CPU activity
+
+2927, 1, switch to kernel mode
+
+2928, 10, context saved
+
+2938, 1, find vector 19 in memory position 0x0026 into the PCd address 0X0765
+
+2940, 17, call device driver (includes delay of 123 from device)
+
+3063, 1, IRET
+
+3064, 123, End of I/O 19: interrupt
+
+3187, 20, handling CPU activity
+
+File content overwritten successfully.
+
+Output generated in execution.txt
+

@@ -1,0 +1,61 @@
+0, 32, handling CPU activity 
+32, 1, switch to kernel mode
+33, 9, context saved
+42, 1, find vector 0 in memory position 0x0000
+ into the PCaddress 0X01E3
+44, 27, call device driver (includes delay of 40 from device)
+84, 1, IRET
+115, 0, End of I/O 0: interrupt
+115, 132, handling CPU activity 
+247, 1, switch to kernel mode
+248, 5, context saved
+253, 1, find vector 1 in memory position 0x0002
+ into the PC address 0X029C
+255, 11, call device driver (includes delay of 40 from device)
+295, 1, IRET
+321, 110, End of I/O 1: interrupt
+431, 20, handling CPU activity
+
+Error: Malformed input line:
+Unknown activity
+
+451, 64, handling CPU activity
+515, 1, switch to kernel mode
+516, 4, context saved
+520, 1, find vector 22 in memory position 0x002C
+ into the PC address 0X03B7
+522, 18, call device driver (includes delay of 40 from device)
+562, 1, IRET
+568, 0, End of I/O 22: interrupt
+568, 164, handling CPU activity
+732, 1, switch to kernel mode
+733, 1, context saved
+734, 1, find vector 2 in memory position 0x0004
+ into the PC address 0X0695
+736, 24, call device driver (includes delay of 40 from device)
+776, 1, IRET
+783, 100, End of I/O 2: interrupt
+883, 22, handling CPU activity
+
+Error: Malformed input line:
+Unknown activity
+
+905, 350, handling CPU activity
+1255, 1, switch to kernel mode
+1256, 5, context saved
+1261, 1, find vector 20 in memory position 0x0028
+ into the PCd address 0X07B7
+1263, 31, call device driver (includes delay of 40 from device)
+1303, 1, IRET
+1333, 652, End of I/O 20: interrupt
+1985, 349, handling CPU activity
+2334, 1, switch to kernel mode
+2335, 10, context saved
+2345, 1, find vector 19 in memory position 0x0026
+ into the PCd address 0X0765
+2347, 12, call device driver (includes delay of 40 from device)
+2387, 1, IRET
+2396, 123, End of I/O 19: interrupt
+2519, 20, handling CPU activity
+File content overwritten successfully.
+Output generated in execution.txt

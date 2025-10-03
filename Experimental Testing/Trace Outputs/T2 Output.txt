@@ -1,19 +1,19 @@
 0, 32, handling CPU activity 
 32, 1, switch to kernel mode
-33, 10, context saved
-43, 1, find vector 0 in memory position 0x0000
+33, 3, context saved
+36, 1, find vector 0 in memory position 0x0000
  into the PCaddress 0X01E3
-45, 20, call device driver (includes delay of 0 from device)
-45, 1, IRET
-73, 0, End of I/O 0: interrupt
-73, 132, handling CPU activity
-205, 1, switch to kernel mode
-206, 10, context saved
-216, 1, find vector 1 in memory position 0x0002
+38, 25, call device driver (includes delay of 0 from device)
+38, 1, IRET
+47, 0, End of I/O 0: interrupt
+47, 132, handling CPU activity
+179, 1, switch to kernel mode
+180, 5, context saved
+185, 1, find vector 1 in memory position 0x0002
  into the PC address 0X029C
-218, 13, call device driver (includes delay of 110 from device)
-328, 1, IRET
-353, 110, End of I/O 1: interrupt
-463, 20, handling CPU activity
+187, 7, call device driver (includes delay of 110 from device)
+297, 1, IRET
+328, 110, End of I/O 1: interrupt
+438, 20, handling CPU activity
 File content overwritten successfully.
 Output generated in execution.txt

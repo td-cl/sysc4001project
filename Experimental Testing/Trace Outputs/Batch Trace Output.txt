@@ -1,0 +1,138 @@
+0, 50, handling CPU activity 
+50, 1, switch to kernel mode
+51, 7, context saved
+58, 1, find vector 7 in memory position 0x000E
+ into the PCaddress 0X00BD
+60, 25, call device driver (includes delay of 265 from device)
+325, 1, IRET
+365, 265, End of I/O 7: interrupt
+630, 100, handling CPU activity
+730, 1, switch to kernel mode
+731, 6, context saved
+737, 1, find vector 12 in memory position 0x0018
+ into the PC address 0X03B9
+739, 9, call device driver (includes delay of 523 from device)
+1262, 1, IRET
+1272, 523, End of I/O 12: interrupt
+1795, 20, handling CPU activity
+1815, 32, handling CPU activity
+1847, 1, switch to kernel mode
+1848, 6, context saved
+1854, 1, find vector 0 in memory position 0x0000
+ into the PCd address 0X01E3
+1856, 30, call device driver (includes delay of 0 from device)
+1856, 1, IRET
+1878, 0, End of I/O 0: interrupt
+1878, 132, handling CPU activity
+2010, 1, switch to kernel mode
+2011, 1, context saved
+2012, 1, find vector 1 in memory position 0x0002
+ into the PCd address 0X029C
+2014, 32, call device driver (includes delay of 110 from device)
+2124, 1, IRET
+2148, 110, End of I/O 1: interrupt
+2258, 20, handling CPU activity
+2278, 350, handling CPU activity
+2628, 1, switch to kernel mode
+2629, 7, context saved
+2636, 1, find vector 20 in memory position 0x0028
+ into the PCd address 0X07B7
+2638, 34, call device driver (includes delay of 652 from device)
+3290, 1, IRET
+3300, 652, End of I/O 20: interrupt
+3952, 349, handling CPU activity
+4301, 1, switch to kernel mode
+4302, 2, context saved
+4304, 1, find vector 1 in memory position 0x0002
+ into the PCd address 0X029C
+4306, 36, call device driver (includes delay of 110 from device)
+4416, 1, IRET
+4454, 123, End of I/O 19: interrupt
+4577, 20, handling CPU activity
+4597, 25, handling CPU activity
+4622, 1, switch to kernel mode
+4623, 7, context saved
+4630, 1, find vector 3 in memory position 0x0006
+ into the PCd address 0X042B
+4632, 23, call device driver (includes delay of 150 from device)
+4782, 1, IRET
+4800, 150, End of I/O 3: interrupt
+4950, 110, handling CPU activity
+5060, 1, switch to kernel mode
+5061, 10, context saved
+5071, 1, find vector 12 in memory position 0x0018
+ into the PCd address 0X03B9
+5073, 8, call device driver (includes delay of 523 from device)
+5596, 1, IRET
+5602, 523, End of I/O 12: interrupt
+6125, 2, handling CPU activity
+6127, 21, handling CPU activity
+6148, 1, switch to kernel mode
+6149, 3, context saved
+6152, 1, find vector 13 in memory position 0x001A
+ into the PCd address 0X06C7
+6154, 22, call device driver (includes delay of 145 from device)
+6299, 1, IRET
+6326, 145, End of I/O 13: interrupt
+6471, 100, handling CPU activity
+6571, 1, switch to kernel mode
+6572, 10, context saved
+6582, 1, find vector 14 in memory position 0x001C
+ into the PCd address 0X0165
+6584, 13, call device driver (includes delay of 636 from device)
+7220, 1, IRET
+7253, 636, End of I/O 14: interrupt
+7889, 29, handling CPU activity
+7918, 150, handling CPU activity
+8068, 1, switch to kernel mode
+8069, 1, context saved
+8070, 1, find vector 9 in memory position 0x0012
+ into the PCd address 0X036C
+8072, 37, call device driver (includes delay of 1000 from device)
+9072, 1, IRET
+9085, 1000, End of I/O 9: interrupt
+10085, 100, handling CPU activity
+10185, 1, switch to kernel mode
+10186, 8, context saved
+10194, 1, find vector 1 in memory position 0x0002
+ into the PCad address 0X029C
+10196, 10, call device driver (includes delay of 110 from device)
+10306, 1, IRET
+10342, 110, End of I/O 1: interrupt
+10452, 305, handling CPU activity
+10757, 89, handling CPU activity
+10846, 1, switch to kernel mode
+10847, 1, context saved
+10848, 1, find vector 18 in memory position 0x0024
+ into the PCad address 0X060A
+10850, 21, call device driver (includes delay of 235 from device)
+11085, 1, IRET
+11102, 235, End of I/O 18: interrupt
+11337, 100, handling CPU activity
+11437, 1, switch to kernel mode
+11438, 7, context saved
+11445, 1, find vector 18 in memory position 0x0024
+ into the PCad address 0X060A
+11447, 6, call device driver (includes delay of 235 from device)
+11682, 1, IRET
+11722, 235, End of I/O 18: interrupt
+11957, 20, handling CPU activity
+11977, 24, handling CPU activity
+12001, 1, switch to kernel mode
+12002, 7, context saved
+12009, 1, find vector 12 in memory position 0x0018
+ into the PCad address 0X03B9
+12011, 9, call device driver (includes delay of 523 from device)
+12534, 1, IRET
+12564, 523, End of I/O 12: interrupt
+13087, 190, handling CPU activity
+13277, 1, switch to kernel mode
+13278, 4, context saved
+13282, 1, find vector 7 in memory position 0x000E
+ into the PCad address 0X00BD
+13284, 33, call device driver (includes delay of 265 from device)
+13549, 1, IRET
+13559, 265, End of I/O 7: interrupt
+13824, 4, handling CPU activity
+File content overwritten successfully.
+Output generated in execution.txt

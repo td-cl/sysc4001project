@@ -1,19 +1,19 @@
 0, 89, handling CPU activity 
 89, 1, switch to kernel mode
-90, 10, context saved
-100, 1, find vector 18 in memory position 0x0024
+90, 5, context saved
+95, 1, find vector 18 in memory position 0x0024
+ into the PCaddress 0X060A
+97, 7, call device driver (includes delay of 235 from device)
+332, 1, IRET
+344, 235, End of I/O 18: interrupt
+579, 100, handling CPU activity 
+679, 1, switch to kernel mode
+680, 1, context saved
+681, 1, find vector 18 in memory position 0x0024
  into the PC address 0X060A
-102, 1, call device driver (includes delay of 235 from device)
-337, 1, IRET
-339, 235, End of I/O 18: interrupt
-574, 100, handling CPU activity
-674, 1, switch to kernel mode
-675, 10, context saved
-685, 1, find vector 18 in memory position 0x0024
- into the PC address 0X060A
-687, 28, call device driver (includes delay of 235 from device)
-922, 1, IRET
-942, 235, End of I/O 18: interrupt
-1177, 20, handling CPU activity
+683, 35, call device driver (includes delay of 235 from device)
+918, 1, IRET
+937, 235, End of I/O 18: interrupt
+1172, 20, handling CPU activity
 File content overwritten successfully.
 Output generated in execution.txt
